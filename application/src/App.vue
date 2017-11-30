@@ -1,9 +1,9 @@
 <template>
-  <div id="app">
+  <v-app>
     <v-container>
       <router-view/>
     </v-container>
-  </div>
+  </v-app>
 </template>
 <script>
   export default {
@@ -12,9 +12,10 @@
 </script>
 
 <style lang="scss">
-   @import "./assets/styles";
-  body {
-    background: url('./assets/images/background.jpg') no-repeat center center fixed;
+  @import "./assets/styles";
+   body {
+    background: url('./assets/images/background.jpeg') no-repeat  center center fixed;
+    background-size: cover;
     &:after {
       content: '';
       position: fixed;
@@ -25,6 +26,9 @@
       background-color: $background-tint;
       opacity: .3;
       z-index: -1;
+    }
+    .application {
+      background: none;
     }
   }
 </style>
